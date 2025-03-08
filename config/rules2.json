@@ -1,0 +1,75 @@
+{
+    "rules": [
+        {
+            "predicate_type": "all",
+            "conditions": [
+                {
+                    "field": "message",
+                    "predicate": "contains",
+                    "value": ""
+                }
+            ],
+            "actions": [
+                {
+                    "type": "mark_as_unread"
+                }
+            ]
+        },
+        {
+            "predicate_type": "any",
+            "conditions": [
+                {
+                    "field_name": "to",
+                    "predicate": "does not contain",
+                    "value": "asassascca"
+                },
+                {
+                    "field_name": "attachment",
+                    "predicate": "contains",
+                    "value": "asassascca"
+                },
+                {
+                    "field_name": "to",
+                    "predicate": "contains",
+                    "value": "asassascca"
+                }
+            ],
+            "actions": [
+                {
+                    "action_type": "mark as read"
+                },
+                {
+                    "action_type": "mark as unread"
+                }
+            ]
+        },
+        {
+            "predicate_type": "any",
+            "conditions": [
+                {
+                    "field_name": "to",
+                    "predicate": "does not contain",
+                    "value": "asassascca"
+                },
+                {
+                    "field_name": "attachment",
+                    "predicate": "contains",
+                    "value": "asassascca"
+                },
+                {
+                    "field_name": "to",
+                    "predicate": "contains",
+                    "value": "asassascca"
+                }
+            ],
+            "actions": [
+                {
+                    "action_type": "mark as read"
+                },
+                {
+                    "action_type": "mark as unread"
+                }
+            ]
+        }
+    ]
+}
