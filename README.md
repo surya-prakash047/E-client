@@ -45,4 +45,13 @@ python -m venv ./venv
 ```bash
 pip install -r requirements.txt
 ```
+4. Run Program
+```bash
+# Available args :- -c, --count, --display, --refresh, --mark-read, mark-unread
+python .\main.py -c 10
+```
+5. Streamlit interface
+```
+streamlit run ./stream_lit.py
+```
     
