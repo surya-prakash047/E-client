@@ -1,0 +1,91 @@
+{
+    "rules": [
+        {
+            "name": "Nptel",
+            "predicate_type": "any",
+            "conditions": [
+                {
+                    "field": "from",
+                    "predicate": "contains",
+                    "value": "onlinecourses@nptel.iitm.ac.in"
+                }
+            ],
+            "actions": [
+                {
+                    "type": "move_message",
+                    "folder": "NPTEL"
+                }
+            ]
+        },
+        {
+            "name": "TCS",
+            "predicate_type": "any",
+            "conditions": [
+                {
+                    "field": "from",
+                    "predicate": "contains",
+                    "value": "TCS"
+                }
+            ],
+            "actions": [
+                {
+                    "type": "move_message",
+                    "folder": "TCS"
+                }
+            ]
+        },
+        {
+            "name": "Face Prep",
+            "predicate_type": "any",
+            "conditions": [
+                {
+                    "field": "from",
+                    "predicate": "contains",
+                    "value": "faceprep"
+                }
+            ],
+            "actions": [
+                {
+                    "type": "move_message",
+                    "folder": "FACE_PREP"
+                }
+            ]
+        },
+        {
+            "name": "Placement",
+            "predicate_type": "any",
+            "conditions": [
+                {
+                    "field": "from",
+                    "predicate": "contains",
+                    "value": "placement"
+                }
+            ],
+            "actions": [
+                {
+                    "type": "move_message",
+                    "folder": "Placement"
+                },
+                {
+                    "type": "mark_as_unread"
+                }
+            ]
+        },
+        {
+            "name": "Time Rule",
+            "predicate_type": "any",
+            "conditions": [
+                {
+                    "field": "date_received",
+                    "predicate": "less_than",
+                    "value": "5"
+                }
+            ],
+            "actions": [
+                {
+                    "type": "mark_as_unread"
+                }
+            ]
+        }
+    ]
+}

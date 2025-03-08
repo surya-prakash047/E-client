@@ -174,5 +174,9 @@ cython_debug/
 .Scripts/
 
 # oauth_related
-./client_secret.json
-./token files/
+/config/client_secret.json
+/token_files/token_gmail_v1.json
+pyvenv.cfg
+
+#db
+/src/database/emails.db
