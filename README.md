@@ -44,14 +44,24 @@ python -m venv ./venv
 3. Install required libraries
 ```bash
 pip install -r requirements.txt
-```
-4. Run Program
+```##Usage
+After getting `client_secret.json` you can execute the main script by 
 ```bash
 # Available args :- -c, --count, --display, --refresh, --mark-read, mark-unread
-python .\main.py -c 10
+python main.py -c 20
 ```
-5. Streamlit interface
+**Using Streamlit interface**
+For more ease of use you can run `stream_lit.py` 
+
+```bash
+streamlit run stream_lit.py
 ```
-streamlit run ./stream_lit.py
+## Utils
+you can run `recreate_db.py` to clear the database.
+
+```bash
+python recreate_db.py
 ```
-    
+
+### Screenshots    
+![image](https://github.com/user-attachments/assets/50e8f8d2-5114-4353-8b20-d6e254314cd6)
