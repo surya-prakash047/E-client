@@ -44,7 +44,8 @@ python -m venv ./venv
 3. Install required libraries
 ```bash
 pip install -r requirements.txt
-```##Usage
+```
+##Usage
 After getting `client_secret.json` you can execute the main script by 
 ```bash
 # Available args :- -c, --count, --display, --refresh, --mark-read, mark-unread
@@ -62,6 +63,11 @@ you can run `recreate_db.py` to clear the database.
 ```bash
 python recreate_db.py
 ```
-
+## Tests
+```bash
+./run_tests.sh
+```
 ### Screenshots    
 ![image](https://github.com/user-attachments/assets/50e8f8d2-5114-4353-8b20-d6e254314cd6)
+
+
